@@ -64,7 +64,7 @@
       "issuer": "Google (Coursera)",
       "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
       "icon": "fa-solid fa-chart-line"
-    },
+    }
     {
       "name": "Advanced PL/SQL",
       "icon": "fa-solid fa-database"
@@ -91,7 +91,7 @@
     "name": "Power BI for Business Workshop",
     "issuer": "OZ Training & Consulting",
     "icon": "fa-solid fa-chart-pie"
-    },
+    }
     ],
   "languages": [
     {
@@ -115,7 +115,7 @@
       "Visual Geo-Localization",
       "Generative AI",
       "Uncertainty Modeling"]
-  },
+  }
   ],
   "references": [
       {
@@ -127,6 +127,6 @@
       "name": "Professor Anastassia Gharib",
       "icon": "fa-solid fa-laptop",
       "reference": "agharib@aus.edu"
-    },
+    }
   ]
 }
