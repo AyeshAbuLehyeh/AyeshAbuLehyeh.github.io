@@ -15,26 +15,26 @@
       "region": "Vermont"
     }
   },
-"work": [
-  {
-    "name": "University of Vermont",
-    "position": "Graduate Research Assistant",
-    "startDate": "09/2023",
-    "endDate": "Present"
-  },
-  {
-    "name": "Orange Jordan",
-    "position": "Senior Service Performance Analyst",
-    "startDate": "10/2021",
-    "endDate": "08/2023"
-  },
-  {
-    "name": "Orange Jordan",
-    "position": "Radio Frequency Engineer",
-    "startDate": "05/2019",
-    "endDate": "10/2021"
-  }
-],
+  "work": [
+    {
+      "name": "University of Vermont",
+      "position": "Graduate Research Assistant",
+      "startDate": "09/2023",
+      "endDate": "Present"
+    },
+    {
+      "name": "Orange Jordan",
+      "position": "Senior Service Performance Analyst",
+      "startDate": "10/2021",
+      "endDate": "08/2023"
+    },
+    {
+      "name": "Orange Jordan",
+      "position": "Radio Frequency Engineer",
+      "startDate": "05/2019",
+      "endDate": "10/2021"
+    }
+  ],
   "education": [
     {
       "institution": "The University of Jordan",
@@ -75,24 +75,24 @@
       "url": "https://www.coursera.org/specializations/machine-learning-introduction",
       "icon": "fa-solid fa-robot"
     },
-  {
-    "name": "Introduction to IoT",
-    "issuer": "Cisco Networking Academy",
-    "url": "https://www.netacad.com/courses/iot/introduction-iot",
-    "icon": "fa-solid fa-network-wired"
-  },
-  {
-    "name": "Introduction to Natural Language Processing",
-    "issuer": "Analytics Vidhya",
-    "url": "https://courses.analyticsvidhya.com/",
-    "icon": "fa-solid fa-language"
-  },
-  {
-  "name": "Power BI for Business Workshop",
-  "issuer": "OZ Training & Consulting",
-  "icon": "fa-solid fa-chart-pie"
-  },
-  ],
+    {
+      "name": "Introduction to IoT",
+      "issuer": "Cisco Networking Academy",
+      "url": "https://www.netacad.com/courses/iot/introduction-iot",
+      "icon": "fa-solid fa-network-wired"
+    },
+    {
+      "name": "Introduction to Natural Language Processing",
+      "issuer": "Analytics Vidhya",
+      "url": "https://courses.analyticsvidhya.com/",
+      "icon": "fa-solid fa-language"
+    },
+    {
+    "name": "Power BI for Business Workshop",
+    "issuer": "OZ Training & Consulting",
+    "icon": "fa-solid fa-chart-pie"
+    },
+    ],
   "languages": [
     {
       "language": "Arabic",
