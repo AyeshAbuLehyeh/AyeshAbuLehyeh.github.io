@@ -36,7 +36,7 @@
   ],
   "education": [
     {
-      "institution": "The University of Jordan",
+      "institution": "University of Jordan",
       "location": "Amman, Jordan",
       "url": "https://www.ju.edu.jo/",
       "area": "Electrical Engineering",
@@ -59,7 +59,6 @@
     },
     {
       "name": "Google Data Analytics Professional Certificate",
-      "date": "2022-05-01",
       "issuer": "Google (Coursera)",
       "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
       "icon": "fa-solid fa-chart-line"
