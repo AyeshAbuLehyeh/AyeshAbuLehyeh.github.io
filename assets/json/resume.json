@@ -64,7 +64,7 @@
       "issuer": "Google (Coursera)",
       "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
       "icon": "fa-solid fa-chart-line"
-    }
+    },
     {
       "name": "Advanced PL/SQL",
       "icon": "fa-solid fa-database"
