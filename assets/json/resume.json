@@ -19,20 +19,20 @@
   {
     "name": "University of Vermont",
     "position": "Graduate Research Assistant",
-    "start_date": "09/2023",
-    "end_date": "Present"
+    "startDate": "09/2023",
+    "endDate": "Present"
   },
   {
     "name": "Orange Jordan",
     "position": "Senior Service Performance Analyst",
-    "start_date": "10/2021",
-    "end_date": "08/2023"
+    "startDate": "10/2021",
+    "endDate": "08/2023"
   },
   {
     "name": "Orange Jordan",
     "position": "Radio Frequency Engineer",
-    "start_date": "05/2019",
-    "end_date": "10/2021"
+    "startDate": "05/2019",
+    "endDate": "10/2021"
   }
 ],
 
@@ -66,8 +66,7 @@
       "issuer": "Google (Coursera)",
       "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
       "icon": "fa-solid fa-chart-line"
-    }
-    ,
+    },
     {
       "name": "Advanced PL/SQL",
       "icon": "fa-solid fa-database"
@@ -94,10 +93,9 @@
   "name": "Power BI for Business Workshop",
   "issuer": "OZ Training & Consulting",
   "icon": "fa-solid fa-chart-pie"
-}
+  },
   ],
-    
-
+  
   "languages": [
     {
       "language": "Arabic",
@@ -133,6 +131,6 @@
       "name": "Professor Anastassia Gharib",
       "icon": "fa-solid fa-laptop",
       "reference": "agharib@aus.edu"
-    }
+    },
   ],
 }
