@@ -35,7 +35,6 @@
     "endDate": "10/2021"
   }
 ],
-
   "education": [
     {
       "institution": "The University of Jordan",
@@ -52,7 +51,6 @@
       "studyType": "PhD"
     }  
   ],
-    
   "certificates": [
     {
       "name": "Cisco Certified Network Associate (CCNA)",
@@ -95,7 +93,6 @@
   "icon": "fa-solid fa-chart-pie"
   },
   ],
-  
   "languages": [
     {
       "language": "Arabic",
@@ -117,8 +114,7 @@
       "Computer Vision",
       "Visual Geo-Localization",
       "Generative AI",
-      "Uncertainty Modeling",
-    ]
+      "Uncertainty Modeling",]
   },
   ],
   "references": [
@@ -132,5 +128,5 @@
       "icon": "fa-solid fa-laptop",
       "reference": "agharib@aus.edu"
     },
-  ],
+  ]
 }
