@@ -139,7 +139,7 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/ayesh-abu-lehyeh", "_blank");
+          window.open("https://www.linkedin.com/in/www.linkedin.com/in/ayesh-abu-lehyeh-7aba101a4", "_blank");
         },
       },{
         id: 'social-orcid',
