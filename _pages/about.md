@@ -5,7 +5,7 @@ permalink: /
 subtitle: PhD student at <a href='https://www.uvm.edu/'>UVM</a>
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.JPG
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>ayesh.abulehyeh@uvm.edu</p>
