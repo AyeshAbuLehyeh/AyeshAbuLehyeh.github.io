@@ -178,8 +178,10 @@ exclude:
   - bin/
   - CONTRIBUTING.md
   - _pages/blog.md
+  - _pages/teaching.md
+  - _pages/profiles.md
+  - _pages/dropdown.md
   - _posts/
-  - _projects/?_project.md
   - CUSTOMIZE.md
   - Dockerfile
   - docker-compose.yml
