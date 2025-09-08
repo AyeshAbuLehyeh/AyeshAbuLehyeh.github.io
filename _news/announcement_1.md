@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper ([UBiGTLoc](https://ieeexplore.ieee.org/document/11123555)) now is publsihed in the [IEEE Internet of Things Journal](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907).
+Our paper ([UBiGTLoc](https://ieeexplore.ieee.org/document/11123555)) now is published in the [IEEE Internet of Things Journal](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907).
