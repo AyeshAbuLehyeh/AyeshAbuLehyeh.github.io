@@ -1,10 +1,7 @@
 ---
 layout: post
-date: 2015-11-07 16:11:00-0400
+date: 2024-05-22 16:11:00-0400
 inline: true
 related_posts: false
 ---
-
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
-
----
+Our [paper](https://ojs.iscram.org/index.php/Proceedings/article/view/106) got accepted in [ISCRAM 2024](https://iscram2024.ercis.org/)! 
