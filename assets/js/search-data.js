@@ -64,11 +64,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-announcements-and-news-can-be-much-longer-than-just-quick-inline-posts-in-fact-they-can-have-all-the-features-available-for-the-standard-blog-posts-see-below",
-          title: 'Announcements and news can be much longer than just quick inline posts. In...',
-          description: "",
-          section: "News",},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-our-paper-got-accepted-in-iscram-2024",
+          title: 'Our paper got accepted in ISCRAM 2024!',
           description: "",
           section: "News",},{id: "news-our-paper-ubigtloc-now-is-published-in-the-ieee-internet-of-things-journal",
           title: 'Our paper (UBiGTLoc) now is published in the IEEE Internet of Things Journal....',
