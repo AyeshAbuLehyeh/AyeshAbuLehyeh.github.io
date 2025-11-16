@@ -1,81 +1,52 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Reliable Indoor Localization with Adaptive Confidence
+description: A GNN framework for indoor localization with rigorous uncertainty guarantees.
+img: /assets/img/indoor_cp_architecture.jpg
 importance: 2
 category: work
-giscus_comments: true
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> This work has been submitted to a top-tier conference and is currently under review.
+</div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/indoor_cp_architecture.jpg" title="Model Architecture" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Our model's architecture. Sensor data (e.g., WiFi/IMU) is processed by a Graph Neural Network (GNN) that understands the building's floorplan graph. Instead of a single "best guess," our method uses Conformal Prediction to output a <b>prediction set</b> (e.g., a set of rooms, highlighted in yellow) with a mathematically guaranteed confidence level.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+
+This paper introduces **a novel framework for reliable indoor localization** that provides rigorous, user-defined confidence guarantees.
+
+### The Problem
+
+Standard indoor localization models are often "black boxes." They provide a single "best guess" for a user's location (e.g., "Room 101") but give no reliable way to know *how confident* they are. This is a critical failure for real-world applications. A model might be 99% certain or 10% certain, but the output looks the same, leading to a risk of "confident failure" in robotics or emergency services.
+
+### Our Solution
+
+Our model is designed to provide not just a location, but a **trustworthy prediction set**. We achieve this by combining two key technologies:
+
+1.  **Graph Neural Networks (GNNs):** We model the indoor environment (rooms, corridors, etc.) as a graph. This allows our model to learn the complex spatial relationships of a building's layout, far better than models that treat each room in isolation.
+2.  **Conformal Prediction (CP):** We apply a CP framework on top of our GNN's output. Conformal Prediction is a powerful statistical tool that can provide a *mathematically guaranteed* confidence level. Instead of a single point, our model outputs a *set* of possible locations and guarantees that the true location is within that set (e.g., 95% of the time).
+
+A key feature of our method is that these prediction sets are **adaptive**. When the model is highly confident, the set is small (e.g., a single room). When the model is uncertain (due to noisy signals), the set automatically grows larger to maintain the 95% guarantee.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/cp_high_confidence.jpg" title="High Confidence Example" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/cp_low_confidence.jpg" title="Low Confidence Example" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    <b>Left (High Confidence):</b> Given clear sensor data, our model is certain and outputs a small, precise prediction set (one room). <b>Right (Low Confidence):</b> With ambiguous sensor data, the set adaptively expands to include all plausible locations, rigorously maintaining the 95% confidence guarantee.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+This approach provides a reliable and practical solution for safety-critical systems, as the downstream application can now understand and act on the model's uncertainty. A full analysis of our method and results has been submitted for publication.
