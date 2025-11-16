@@ -75,9 +75,9 @@ ninja.data = [{
           description: "A highly efficient, real-time framework for cross-view geolocalization.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-reliable-indoor-localization-with-adaptive-confidence",
+          title: 'Reliable Indoor Localization with Adaptive Confidence',
+          description: "A GNN framework for indoor localization with rigorous uncertainty guarantees.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
