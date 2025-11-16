@@ -70,9 +70,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-ubigtloc-now-is-published-in-the-ieee-internet-of-things-journal",
           title: 'Our paper (UBiGTLoc) now is published in the IEEE Internet of Things Journal....',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-efficient-cross-view-geolocalization",
+          title: 'Efficient Cross-View Geolocalization',
+          description: "A highly efficient, real-time framework for cross-view geolocalization.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
