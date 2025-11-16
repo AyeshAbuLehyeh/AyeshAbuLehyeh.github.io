@@ -37,16 +37,13 @@ Our model is designed to provide not just a location, but a **trustworthy predic
 
 A key feature of our method is that these prediction sets are **adaptive**. When the model is highly confident, the set is small (e.g., a single room). When the model is uncertain (due to noisy signals), the set automatically grows larger to maintain the 95% guarantee.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/cp_high_confidence.jpg" title="High Confidence Example" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/cp_low_confidence.jpg" title="Low Confidence Example" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/sacp_error_map.jpg" title="Localization Error Map" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    <b>Left (High Confidence):</b> Given clear sensor data, our model is certain and outputs a small, precise prediction set (one room). <b>Right (Low Confidence):</b> With ambiguous sensor data, the set adaptively expands to include all plausible locations, rigorously maintaining the 95% confidence guarantee.
+    Our model's localization error map, demonstrating its ability to learn regional confidence. Regions like <b>R1</b> and <b>R4</b> show low localization error, indicating high model confidence. In contrast, other areas exhibit higher error due to more ambiguous sensor data. Our method learns this and adaptively expands the prediction set size in these low-confidence regions to maintain the user-defined confidence guarantee.
 </div>
 
 This approach provides a reliable and practical solution for safety-critical systems, as the downstream application can now understand and act on the model's uncertainty. A full analysis of our method and results has been submitted for publication.
