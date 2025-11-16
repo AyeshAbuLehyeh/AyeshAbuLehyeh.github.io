@@ -80,9 +80,9 @@ ninja.data = [{
           description: "A GNN framework for indoor localization with rigorous uncertainty guarantees.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-ml-driven-rf-test-compaction",
+          title: 'ML-Driven RF Test Compaction',
+          description: "Reducing semiconductor test time and cost at GlobalFoundries using machine learning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-project-4",
