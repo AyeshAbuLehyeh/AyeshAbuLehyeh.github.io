@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD student at <a href='https://www.uvm.edu/'>UVM</a>
+subtitle: Ph.D. Researcher in Computer Science at <a href='https://www.uvm.edu/'>University of Vermont</a>
 profile:
   align: right
   image: prof_pic.jpg
@@ -25,8 +25,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a third-year Computer Science Ph.D. student at the University of Vermont, working with Dr. Safwan Wshah at the [Vermont AI Lab](https://www.wshahaigroup.com/). My primary research focuses on geospatial understanding, including cross-view geo-localization and image synthesis using generative models.
+I am a Ph.D. researcher in Computer Science at the University of Vermont, specializing in cross-view image geolocalization. My research focuses on visual geolocalization from ground-level imagery using overhead and map-based representations, with emphasis on achieving real-time, fine-grained localization at sub-meter accuracy in real-world settings.
+My work advances learning-based localization models that extend beyond retrieval through continuous refinement via cross-view image matching, geometric reasoning, and uncertainty-aware modeling. These approaches enable robust localization under significant viewpoint changes and environmental variability. I also investigate multi-modal representation learning and vision–language models for geolocalization, aiming to enable semantic reasoning about location and provide interpretable explanations beyond black-box predictions. Recently, I have been exploring generative modeling approaches, particularly flow matching, as a principled framework for modeling spatial transformations in visual geolocalization.
 
-In addition to my core research, I work on applied machine learning projects in collaboration with industry, including wireless sensor network localization and semiconductor chip manufacturing ([GlobalFoundries](https://gf.com/)).
+In parallel with my academic research, I have worked on applied machine learning problems in collaboration with industry, including wireless sensor network localization and data-driven modeling for semiconductor manufacturing at [GlobalFoundries](https://gf.com/).
 
-I enjoy exploring new ideas and interdisciplinary applications of machine learning. Always happy to discuss collaborations or share insights! 😁
+I am interested in interdisciplinary collaborations that address practical challenges in visual geolocalization and spatial reasoning, and I am always open to discussing research ideas or potential collaborations.
