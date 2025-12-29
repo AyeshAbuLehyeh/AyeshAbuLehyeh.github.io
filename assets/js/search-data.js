@@ -77,7 +77,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project/";
             },},{id: "projects-reliable-indoor-localization-with-adaptive-confidence",
           title: 'Reliable Indoor Localization with Adaptive Confidence',
-          description: "A GNN framework for indoor localization with rigorous uncertainty guarantees.",
+          description: "A GNN-based regression framework for indoor localization with rigorous uncertainty guarantees.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-ml-driven-rf-test-compaction",
