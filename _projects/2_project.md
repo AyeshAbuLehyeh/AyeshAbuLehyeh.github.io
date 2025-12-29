@@ -34,7 +34,7 @@ Our approach combines two core components:
 
 1. **Graph Neural Networks (GNNs) for Indoor Modeling:**  
    The indoor environment is represented as a graph where nodes correspond to fixed infrastructure elements (e.g., WiFi access points) and the mobile user, while edges capture physical proximity, signal relationships, and network connectivity.  
-   This allows the model to reason jointly over sensor measurements and the spatial structure of the indoor network.
+   This allows the model to reason jointly over sensor measurements and the structure of the indoor network.
 
 2. **Conformal Prediction for Regression:**  
    We apply conformal prediction on top of the regression output to produce **confidence regions** around the predicted \((x, y)\) location.  
@@ -44,12 +44,35 @@ Crucially, the confidence regions are **adaptive**: they remain tight in well-ob
 
 ---
 
-{% include figure.liquid path="/assets/img/indoor_cp_architecture.jpg" title="GNN-based indoor localization with conformal regression" class="img-fluid rounded mx-auto d-block" style="max-width:900px;" %}
+<div class="project-figure-medium">
+  {% include figure.liquid
+     path="/assets/img/indoor_cp_architecture.jpg"
+     title="GNN-based indoor localization with conformal regression"
+  %}
+</div>
 
 <div class="caption">
 Sensor measurements (e.g., WiFi, IMU) are processed by a Graph Neural Network that models the indoor network structure, including access points and their relationships to the mobile user.  
 Conformal Prediction converts point estimates into adaptive confidence regions with rigorous coverage guarantees.
 </div>
+
+
+---
+
+## Technical Details
+
+This framework was implemented with a focus on **probabilistic regression, structured modeling, and uncertainty calibration**:
+
+- **Framework:** PyTorch, PyTorch Geometric  
+- **Model:** Graph Neural Networks for continuous \((x, y)\) regression  
+- **Graph construction:** Nodes represent access points and the mobile user; edges encode spatial proximity and signal relationships  
+- **Uncertainty modeling:** Conformal Prediction applied to regression outputs (distribution-free, coverage-guaranteed)  
+- **Calibration strategy:** Data-driven residual modeling with adaptive region sizing  
+- **Clustering:** KMeans used for structural or calibration-related preprocessing  
+- **Data processing:** NumPy and Pandas for large-scale sensor and localization datasets  
+- **Evaluation:** Empirical coverage, localization error, and region adaptivity analysis
+
+The design explicitly separates representation learning from uncertainty calibration, allowing the confidence mechanism to remain statistically valid even under distribution shifts.
 
 ---
 
@@ -60,14 +83,20 @@ Regions with strong and consistent signal geometry yield compact confidence regi
 
 ---
 
-{% include figure.liquid path="/assets/img/sacp_error_map.jpg" title="Localization error and uncertainty behavior" class="img-fluid rounded mx-auto d-block" style="max-width:750px;" %}
+<div class="project-figure-medium">
+  {% include figure.liquid
+     path="/assets/img/sacp_error_map.jpg"
+     title="Localization error and uncertainty behavior"
+  %}
+</div>
 
 <div class="caption">
 Localization error map illustrating region-dependent uncertainty.  
 Areas with lower error correspond to tighter confidence regions, while ambiguous regions exhibit larger uncertainty, which is explicitly captured by the conformal prediction mechanism.
 </div>
 
+
 ---
 
-This framework provides a principled and practical solution for **reliable indoor localization**, allowing downstream systems to reason explicitly about positional uncertainty.  
+This framework provides a principled and practical solution for **reliable indoor localization**, enabling downstream systems to reason explicitly about positional uncertainty.  
 A full technical analysis and experimental evaluation have been submitted for publication.
