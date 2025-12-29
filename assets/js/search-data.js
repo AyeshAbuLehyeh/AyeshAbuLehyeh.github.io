@@ -72,7 +72,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-efficient-cross-view-geolocalization",
           title: 'Efficient Cross-View Geolocalization',
-          description: "A highly efficient, real-time framework for cross-view geolocalization.",
+          description: "A lightweight, real-time framework for fine-grained cross-view geolocalization.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-reliable-indoor-localization-with-adaptive-confidence",
