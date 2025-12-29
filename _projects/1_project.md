@@ -38,7 +38,12 @@ This design enables iterative and uncertainty-aware localization while remaining
 
 ---
 
-{% include figure.liquid path="/assets/img/cvg_architecture.jpg" title="Model architecture and iterative refinement process" class="img-fluid rounded mx-auto d-block" style="max-width:900px;" %}
+<div class="project-figure-large">
+  {% include figure.liquid
+     path="/assets/img/cvg_architecture.jpg"
+     title="Model architecture and iterative refinement"
+  %}
+</div>
 
 ---
 
@@ -50,10 +55,21 @@ The proposed framework achieves compelling localization accuracy on benchmarks s
 
 <div class="row justify-content-center">
   <div class="col-md-7">
-    {% include figure.liquid path="/assets/img/cvg_qualitative.jpg" title="Iterative refinement of pose hypotheses" class="img-fluid rounded mx-auto d-block" style="max-width:700px;" %}
+    <div class="project-figure-medium">
+      {% include figure.liquid
+         path="/assets/img/cvg_qualitative.jpg"
+         title="Iterative refinement of pose hypotheses"
+      %}
+    </div>
   </div>
+
   <div class="col-md-5">
-    {% include figure.liquid path="/assets/img/cvg_heatmap.jpg" title="Convergence behavior across refinement rounds" class="img-fluid rounded mx-auto d-block" style="max-width:500px;" %}
+    <div class="project-figure-medium">
+      {% include figure.liquid
+         path="/assets/img/cvg_heatmap.jpg"
+         title="Refinement convergence behavior"
+      %}
+    </div>
   </div>
 </div>
 
