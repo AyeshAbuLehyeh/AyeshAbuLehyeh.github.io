@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Reliable Indoor Localization with Adaptive Confidence
-description: A GNN framework for indoor localization with rigorous uncertainty guarantees.
+description: A GNN-based regression framework for indoor localization with rigorous uncertainty guarantees.
 img: /assets/img/indoor_cp_architecture.jpg
 importance: 2
 category: work
@@ -9,41 +9,65 @@ related_publications: true
 ---
 
 <div class="alert alert-info" role="alert">
-  <strong>Note:</strong> This work has been submitted to a top-tier conference and is currently under review.
+  <strong>Status:</strong> This work has been submitted to a top-tier conference and is currently under review.  
+  Code and full technical details will be released upon acceptance.
 </div>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/indoor_cp_architecture.jpg" title="Model Architecture" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+This project introduces a **reliable indoor localization framework** that performs **continuous position regression** while providing **formal, user-defined uncertainty guarantees**, enabling safer deployment in real-world systems.
+
+---
+
+## Problem
+
+Most indoor localization models output a single point estimate of the user’s location \((x, y)\) without quantifying how reliable that estimate is.  
+In practice, sensor noise, multipath effects, and environmental ambiguity can cause large localization errors that are indistinguishable from confident predictions.
+
+This lack of calibrated uncertainty is a major limitation for safety-critical applications such as robotics, navigation, and human–machine interaction.
+
+---
+
+## Key Idea
+
+We design an indoor localization system that performs **precise coordinate regression** while explicitly modeling uncertainty through **adaptive confidence regions**.
+
+Our approach combines two core components:
+
+1. **Graph Neural Networks (GNNs) for Indoor Modeling:**  
+   The indoor environment is represented as a graph where nodes correspond to fixed infrastructure elements (e.g., WiFi access points) and the mobile user, while edges capture physical proximity, signal relationships, and network connectivity.  
+   This allows the model to reason jointly over sensor measurements and the spatial structure of the indoor network.
+
+2. **Conformal Prediction for Regression:**  
+   We apply conformal prediction on top of the regression output to produce **confidence regions** around the predicted \((x, y)\) location.  
+   These regions come with **formal statistical guarantees**, ensuring that the true location lies within the region with a user-specified confidence level (e.g., 95%).
+
+Crucially, the confidence regions are **adaptive**: they remain tight in well-observed areas and expand automatically in regions with noisy or ambiguous signals to maintain the desired coverage guarantee.
+
+---
+
+{% include figure.liquid path="/assets/img/indoor_cp_architecture.jpg" title="GNN-based indoor localization with conformal regression" class="img-fluid rounded mx-auto d-block" style="max-width:900px;" %}
+
 <div class="caption">
-    Our model's architecture. Sensor data (e.g., WiFi/IMU) is processed by a Graph Neural Network (GNN) that understands the building's floorplan graph. Instead of a single "best guess," our method uses Conformal Prediction to output a <b>prediction set</b> (e.g., a set of rooms, highlighted in yellow) with a mathematically guaranteed confidence level.
+Sensor measurements (e.g., WiFi, IMU) are processed by a Graph Neural Network that models the indoor network structure, including access points and their relationships to the mobile user.  
+Conformal Prediction converts point estimates into adaptive confidence regions with rigorous coverage guarantees.
 </div>
 
+---
 
-This paper introduces **a novel framework for reliable indoor localization** that provides rigorous, user-defined confidence guarantees.
+## Results and Behavior
 
-### The Problem
+The model learns **spatially varying uncertainty** across the indoor environment.  
+Regions with strong and consistent signal geometry yield compact confidence regions, while ambiguous areas produce larger regions that preserve the user-defined confidence level.
 
-Standard indoor localization models are often "black boxes." They provide a single "best guess" for a user's location (e.g., "Room 101") but give no reliable way to know *how confident* they are. This is a critical failure for real-world applications. A model might be 99% certain or 10% certain, but the output looks the same, leading to a risk of "confident failure" in robotics or emergency services.
+---
 
-### Our Solution
+{% include figure.liquid path="/assets/img/sacp_error_map.jpg" title="Localization error and uncertainty behavior" class="img-fluid rounded mx-auto d-block" style="max-width:750px;" %}
 
-Our model is designed to provide not just a location, but a **trustworthy prediction set**. We achieve this by combining two key technologies:
-
-1.  **Graph Neural Networks (GNNs):** We model the indoor environment (rooms, corridors, etc.) as a graph. This allows our model to learn the complex spatial relationships of a building's layout, far better than models that treat each room in isolation.
-2.  **Conformal Prediction (CP):** We apply a CP framework on top of our GNN's output. Conformal Prediction is a powerful statistical tool that can provide a *mathematically guaranteed* confidence level. Instead of a single point, our model outputs a *set* of possible locations and guarantees that the true location is within that set (e.g., 95% of the time).
-
-A key feature of our method is that these prediction sets are **adaptive**. When the model is highly confident, the set is small (e.g., a single room). When the model is uncertain (due to noisy signals), the set automatically grows larger to maintain the 95% guarantee.
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/sacp_error_map.jpg" title="Localization Error Map" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
 <div class="caption">
-    Our model's localization error map, demonstrating its ability to learn regional confidence. Regions like <b>R1</b> and <b>R4</b> show low localization error, indicating high model confidence. In contrast, other areas exhibit higher error due to more ambiguous sensor data. Our method learns this and adaptively expands the prediction set size in these low-confidence regions to maintain the user-defined confidence guarantee.
+Localization error map illustrating region-dependent uncertainty.  
+Areas with lower error correspond to tighter confidence regions, while ambiguous regions exhibit larger uncertainty, which is explicitly captured by the conformal prediction mechanism.
 </div>
 
-This approach provides a reliable and practical solution for safety-critical systems, as the downstream application can now understand and act on the model's uncertainty. A full analysis of our method and results has been submitted for publication.
+---
+
+This framework provides a principled and practical solution for **reliable indoor localization**, allowing downstream systems to reason explicitly about positional uncertainty.  
+A full technical analysis and experimental evaluation have been submitted for publication.
