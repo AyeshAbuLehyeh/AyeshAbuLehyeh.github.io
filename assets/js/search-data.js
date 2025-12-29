@@ -82,7 +82,7 @@ ninja.data = [{
               window.location.href = "/projects/2_project/";
             },},{id: "projects-ml-driven-rf-test-compaction",
           title: 'ML-Driven RF Test Compaction',
-          description: "Reducing semiconductor test time and cost at GlobalFoundries using machine learning.",
+          description: "Reducing semiconductor RF test time and cost using machine learning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{
