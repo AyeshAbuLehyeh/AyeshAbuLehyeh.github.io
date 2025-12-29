@@ -29,10 +29,10 @@ Existing approaches often trade accuracy for speed or rely on heavy iterative in
 We decouple expensive visual reasoning from fast geometric refinement:
 
 1. **Single-pass visual encoding:**  
-   Ground and satellite images are processed once using a lightweight backbone and a cross-attention module to extract a shared visual representation.
+   Ground and satellite images are processed once using lightweight CNN backbones and a cross-attention module to extract a shared visual representation.
 
 2. **Fast iterative refinement:**  
-   Localization is performed by iteratively refining multiple pose hypotheses using a tiny MLP, enabling robustness without repeatedly running the visual backbone.
+   Localization is performed by iteratively refining multiple pose hypotheses using a compact MLP, enabling robustness without repeatedly running the visual backbone.
 
 This design enables iterative and uncertainty-aware localization while remaining efficient for real-time use.
 
@@ -47,14 +47,31 @@ This design enables iterative and uncertainty-aware localization while remaining
 
 ---
 
-## Results
+## Technical Details
 
-The proposed framework achieves compelling localization accuracy on benchmarks such as **KITTI** and **VIGOR**, while showing strong runtime efficiency.
+This framework was implemented with a strong emphasis on **efficiency, modularity, and real-time deployment**:
+
+- **Framework:** PyTorch  
+- **Visual encoders:** Lightweight CNN backbones (e.g., EfficientNet, ConvNet-style architectures)  
+- **Cross-view fusion:** Cross-attention mechanism for aligning ground-level and satellite feature representations  
+- **Localization head:** Small MLP predicting probabilistic displacement (distance and direction)  
+- **Inference strategy:** Multi-hypothesis iterative refinement with shared visual features  
+- **Training:** End-to-end supervised learning with regression-based objectives  
+- **Benchmarks:** Evaluated on standard FG-CVG datasets including **KITTI** and **VIGOR**
+
+The architecture is designed such that computationally expensive components are executed only once, while refinement operates entirely in a low-dimensional latent space.
 
 ---
 
+## Results
+
+The proposed framework achieves compelling localization accuracy on benchmarks such as **KITTI** and **VIGOR**, while maintaining strong runtime efficiency suitable for real-time applications (~30 FPS(Frame Per Second)).
+
+---
+
+<!-- Figure 1 -->
 <div class="row justify-content-center">
-  <div class="col-md-7">
+  <div class="col-md-8">
     <div class="project-figure-medium">
       {% include figure.liquid
          path="/assets/img/cvg_qualitative.jpg"
@@ -62,8 +79,11 @@ The proposed framework achieves compelling localization accuracy on benchmarks s
       %}
     </div>
   </div>
+</div>
 
-  <div class="col-md-5">
+<!-- Figure 2 -->
+<div class="row justify-content-center mt-4">
+  <div class="col-md-8">
     <div class="project-figure-medium">
       {% include figure.liquid
          path="/assets/img/cvg_heatmap.jpg"
@@ -72,4 +92,3 @@ The proposed framework achieves compelling localization accuracy on benchmarks s
     </div>
   </div>
 </div>
-
