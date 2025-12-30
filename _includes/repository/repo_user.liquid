@@ -19,16 +19,21 @@
 {% endcase %}
 
 <div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.username }}">
+  <a href="https://github.com/{{ include.username }}" target="_blank" rel="noopener">
     <img
       class="only-light w-100"
       alt="{{ include.username }}"
       src="https://github-readme-stats.vercel.app/api/?username={{ include.username }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_icons=true"
+      loading="lazy"
+      onerror="this.style.display='none'; this.parentElement.innerHTML += '<div class=&quot;repo-fallback&quot;>@{{ include.username }}</div>';"
     >
     <img
       class="only-dark w-100"
       alt="{{ include.username }}"
       src="https://github-readme-stats.vercel.app/api/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_icons=true"
+      loading="lazy"
+      onerror="this.style.display='none'; this.parentElement.innerHTML += '<div class=&quot;repo-fallback&quot;>@{{ include.username }}</div>';"
     >
   </a>
 </div>
+
