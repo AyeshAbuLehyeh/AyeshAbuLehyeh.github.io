@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
+title: Repositories
 description:
 nav: true
 nav_order: 4
@@ -11,7 +11,7 @@ nav_order: 4
 
 ## GitHub users
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+<div class="repositories d-flex flex-wrap justify-content-start">
   {% for user in site.data.repositories.github_users %}
     {% include repository/repo_user.liquid username=user %}
   {% endfor %}
@@ -25,7 +25,7 @@ nav_order: 4
 
   <h4>{{ user }}</h4>
   {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <div class="repositories d-flex flex-wrap justify-content-start">
   {% include repository/repo_trophies.liquid username=user %}
   </div>
 
@@ -39,7 +39,7 @@ nav_order: 4
 
 ## GitHub Repositories
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+<div class="repositories d-flex flex-wrap justify-content-start">
   {% for repo in site.data.repositories.github_repos %}
     {% include repository/repo.liquid repository=repo %}
   {% endfor %}
