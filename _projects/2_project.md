@@ -44,12 +44,12 @@ Crucially, the confidence regions are **adaptive**: they remain tight in well-ob
 
 ---
 
-<div class="project-figure-medium">
-  {% include figure.liquid
-     path="/assets/img/indoor_cp_architecture.jpg"
-     title="GNN-based indoor localization with conformal regression"
-  %}
-</div>
+{% include figure.liquid
+   path="/assets/img/indoor_cp_architecture.jpg"
+   title="GNN-based indoor localization with conformal regression"
+   max-width="720px"
+   class="mx-auto d-block"
+%}
 
 <div class="caption">
 Sensor measurements (e.g., WiFi, IMU) are processed by a Graph Neural Network that models the indoor network structure, including access points and their relationships to the mobile user.  
@@ -83,12 +83,12 @@ Regions with strong and consistent signal geometry yield compact confidence regi
 
 ---
 
-<div class="project-figure-medium">
-  {% include figure.liquid
-     path="/assets/img/sacp_error_map.jpg"
-     title="Localization error and uncertainty behavior"
-  %}
-</div>
+{% include figure.liquid
+   path="/assets/img/sacp_error_map.jpg"
+   title="Localization error and uncertainty behavior"
+   max-width="650px"
+   class="mx-auto d-block"
+%}
 
 <div class="caption">
 Localization error map illustrating region-dependent uncertainty.  
