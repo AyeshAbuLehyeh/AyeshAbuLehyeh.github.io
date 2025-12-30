@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Ph.D. Researcher in Computer Science at <a href='https://www.uvm.edu/'>University of Vermont</a>
 profile:
