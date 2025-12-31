@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Ayesh Abu Lehyeh",
-    "label": "PhD Researcher | Computer Vision & Geolocalization",
+    "label": "PhD Researcher | Computer Vision & Machine Learning",
     "image": "",
     "email": "ayesh.abulehyeh@uvm.edu",
     "phone": "(802) 829-1976",
@@ -21,20 +21,20 @@
       "startDate": "2023-09",
       "summary": "Doctoral research in computer vision–based geolocalization, spanning sensor networks, indoor positioning, and large-scale visual geolocalization from images.",
       "highlights": [
-        "Research theme: geolocalization using visual and sensor data with an emphasis on robustness, uncertainty modeling, and deployability",
-
-        "GPS-free outdoor sensor network geolocalization: designed a spatio-temporal learning framework using Graph Neural Networks and BiLSTMs to localize large-scale IoT sensor networks from noisy radio range measurements; achieved meter-level accuracy and published the results in a peer-reviewed IoT journal",
-
-        "Reliable indoor geolocalization: developed a GNN-based regression model for indoor positioning and integrated conformal prediction to produce statistically valid confidence regions with calibrated uncertainty guarantees; demonstrated empirical coverage closely matching target confidence levels",
-
-        "Visual geolocalization under severe appearance changes: studied image-based geolocalization robustness under weather, illumination, and seasonal shifts; extended the Sample4Geo baseline with improved training strategies and robustness-focused evaluation protocols",
-
-        "Efficient fine-grained cross-view geolocalization: designed an efficient framework aligning ground-level and satellite imagery by decoupling heavy visual encoding from fast geometric refinement; achieved sub-meter accuracy with significantly reduced inference cost; work currently under review at a top-tier computer vision venue",
-
-        "Ongoing research on vision-language models for geolocalization: exploring semantic and spatial reasoning using VLMs, including prompt design and parameter-efficient fine-tuning (LoRA) for interpretable location reasoning",
-
-        "All research implemented primarily in PyTorch and PyTorch Geometric, with extensive experimentation, ablation studies, and reproducibility practices"
-      ]
+      "Research theme: geolocalization using visual and sensor data with an emphasis on robustness, uncertainty modeling, and deployability",
+    
+      "GPS-free outdoor sensor network geolocalization: designed a spatio-temporal learning framework using Graph Neural Networks and BiLSTMs to localize large-scale IoT sensor networks from noisy radio range measurements; achieved meter-level accuracy and published the results in a peer-reviewed IoT journal — [Paper](https://ieeexplore.ieee.org/document/11123555)",
+    
+      "Reliable indoor geolocalization: developed a GNN-based regression model for indoor positioning and integrated conformal prediction to produce statistically valid confidence regions with calibrated uncertainty guarantees; demonstrated empirical coverage closely matching target confidence levels — [Project](https://ayeshabulehyeh.github.io/projects/2_project/)",
+    
+      "Visual geolocalization under severe appearance changes: studied robustness under weather, illumination, and seasonal shifts; extended the Sample4Geo baseline with improved training strategies and robustness-oriented evaluation — [Code](https://github.com/AyeshAbuLehyeh/Sample4Geo-Weather-Robust)",
+    
+      "Efficient fine-grained cross-view geolocalization: designed an efficient framework aligning ground-level and satellite imagery by decoupling heavy visual encoding from fast geometric refinement; achieved sub-meter accuracy with significantly reduced inference cost; currently under review at a top-tier computer vision venue — [Project](https://ayeshabulehyeh.github.io/projects/1_project/)",
+    
+      "Ongoing research on vision-language models for geolocalization: exploring semantic and spatial reasoning using VLMs, including prompt engineering and parameter-efficient fine-tuning (LoRA).",
+    
+      "All research implemented primarily in PyTorch and PyTorch Geometric, with extensive experimentation, ablation studies, and reproducibility practices"
+    ]
     },
 
     {
@@ -73,61 +73,83 @@
     {
       "name": "Core Research Expertise",
       "keywords": [
-        "Visual Geolocalization",
+        "Geolocalization",
         "Cross-View Image Matching",
         "Fine-Grained Image Geolocalization",
         "Uncertainty-Aware Learning",
-        "Spatial Reasoning"
+        "Geospatial Reasoning and Understanding"
       ]
     },
     {
       "name": "Machine Learning & Computer Vision",
       "keywords": [
-        "Deep Learning (CNNs, Transformers)",
+        "Deep Learning (CNNs, RNNs, Transformers)",
         "Representation Learning",
         "Graph Neural Networks (GNNs)",
-        "Sequence Models (LSTM, BiLSTM)",
+        "Sequence Models (GRU, BiLSTM)",
         "Conformal Prediction"
       ]
     },
     {
       "name": "Tools & Frameworks",
       "keywords": [
+        "Python",
+        "C++",
+        "MATLAB"
         "PyTorch",
         "PyTorch Geometric",
         "NumPy",
         "Pandas",
         "Scikit-learn"
+        "Linux"
       ]
     },
     {
       "name": "Data & Visualization",
       "keywords": [
         "SQL",
-        "Python Automation",
+        "Python",
         "Power BI",
         "Tableau",
-        "Grafana"
+        "Grafana",
+        "Matplotlib"
       ]
     }
   ],
 
   "education": [
+  {
+    "institution": "University of Vermont",
+    "location": "Burlington, Vermont, USA",
+    "url": "https://www.uvm.edu/",
+    "area": "Computer Science",
+    "studyType": "PhD",
+    "startDate": "2023-09",
+    "summary": "PhD researcher specializing in computer vision and geolocalization, with a focus on uncertainty-aware learning and cross-view visual reasoning.",
+    "highlights": [
+      "Research focus: visual geolocalization, cross-view image understanding, uncertainty modeling",
+      "Graduate coursework: Advanced Machine Learning, Deep Learning, Natural Language Processing, Data Mining, Data Science, Advanced Algorithm Design"
+    ]
+  },
     {
-      "institution": "University of Vermont",
-      "location": "Burlington, Vermont",
-      "url": "https://www.uvm.edu/",
-      "area": "Computer Science",
-      "studyType": "PhD"
-    },
-    {
-      "institution": "University of Jordan",
-      "location": "Amman, Jordan",
-      "url": "https://www.ju.edu.jo/",
-      "area": "Electrical Engineering",
-      "studyType": "BSc"
-    }
-  ],
+    "institution": "University of Jordan",
+    "location": "Amman, Jordan",
+    "url": "https://www.ju.edu.jo/",
+    "area": "Electrical Engineering",
+    "studyType": "BSc",
+    "startDate": "2014-09",
+    "endDate": "2019-02",
+    "summary": "Strong foundation in signal processing, wireless communications, and applied mathematics, with early exposure to distributed systems and algorithm design.",
+    "highlights": [
+      "Coursework: Signals & Systems, Digital Signal Processing, Wireless Communications, Probability & Statistics",
+      "Graduated with honors",
+      "Graduation Project — Design of a Channel Management System for Cognitive Radio:",
+      "Designed a fully distributed channel management framework enabling cognitive users to dynamically access spectrum while satisfying heterogeneous QoS requirements",
+      "Developed novel channel allocation and coordination algorithms implemented in C++",
+      "Used MATLAB for system-level simulation, performance evaluation, and visualization of network behavior"
+    ]
+  }
+]
 
   "certificates": [
     {
@@ -176,12 +198,13 @@
 
   "interests": [
     {
-      "name": "Computer Vision & Geolocalization",
+      "name": "Computer Vision & Machine Learning",
       "keywords": [
         "Visual Geolocalization",
         "Cross-View Reasoning",
         "Uncertainty Modeling",
-        "Vision-Language Models"
+        "Vision-Language Models",
+        "Generative Models"
       ]
     }
   ],
