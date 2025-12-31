@@ -6,13 +6,11 @@
     "email": "ayesh.abulehyeh@uvm.edu",
     "phone": "(802) 829-1976",
     "url": "https://AyeshAbuLehyeh.github.io/",
-    "summary": "PhD researcher at the University of Vermont specializing in computer vision and machine learning for geolocalization. My research focuses on fine-grained and reliable geolocalization from visual and sensor data, with an emphasis on uncertainty modeling, cross-view reasoning, and real-world deployment constraints.",
+    "summary": "PhD researcher at the University of Vermont specializing in computer vision and machine learning for geolocalization. My work focuses on fine-grained and reliable geolocalization from visual and sensor data, emphasizing uncertainty-aware modeling, cross-view reasoning, and robustness under real-world constraints.",
     "location": {
-      "address": "",
-      "postalCode": "",
       "city": "Burlington",
-      "countryCode": "US",
-      "region": "Vermont"
+      "region": "Vermont",
+      "countryCode": "US"
     }
   },
 
@@ -20,127 +18,114 @@
     {
       "name": "University of Vermont",
       "position": "Graduate Research Assistant (PhD Researcher)",
-      "startDate": "09/2023",
+      "startDate": "2023-09",
+      "summary": "Doctoral research in computer vision–based geolocalization, spanning sensor networks, indoor positioning, and large-scale visual geolocalization from images.",
       "highlights": [
-        "Conducting PhD research on machine learning–based geolocalization, with a primary focus on computer vision, spatial reasoning, and uncertainty-aware modeling",
+        "Research theme: geolocalization using visual and sensor data with an emphasis on robustness, uncertainty modeling, and deployability",
 
-        "Project 1 — GPS-Free Geolocalization for Outdoor Sensor Networks:",
-        "Designed a geolocalization framework for large-scale outdoor IoT sensor networks without relying on GPS, using only inter-node radio range measurements",
-        "Developed a spatio-temporal learning framework combining Graph Neural Networks (GNNs) and BiLSTMs to model spatial topology and temporal dynamics",
-        "Achieved meter-level localization accuracy in noisy outdoor environments relevant to smart cities and real-world deployments",
-        "This work resulted in a peer-reviewed publication in an IoT journal (see Publications section)",
+        "GPS-free outdoor sensor network geolocalization: designed a spatio-temporal learning framework using Graph Neural Networks and BiLSTMs to localize large-scale IoT sensor networks from noisy radio range measurements; achieved meter-level accuracy and published the results in a peer-reviewed IoT journal",
 
-        "Project 2 — Reliable Indoor Geolocalization with Uncertainty Guarantees:",
-        "Developed a GNN-based regression model for indoor geolocalization predicting continuous spatial coordinates",
-        "Integrated conformal prediction to produce statistically valid confidence regions with reliable coverage guarantees",
-        "Demonstrated strong uncertainty calibration, with empirical coverage closely matching target confidence levels",
-        "Project page: https://ayeshabulehyeh.github.io/projects/2_project/",
+        "Reliable indoor geolocalization: developed a GNN-based regression model for indoor positioning and integrated conformal prediction to produce statistically valid confidence regions with calibrated uncertainty guarantees; demonstrated empirical coverage closely matching target confidence levels",
 
-        "Project 3 — Visual Geolocalization under Severe Weather and Appearance Changes:",
-        "Studied the robustness of image-based geolocalization under severe weather, illumination, and seasonal changes",
-        "Extended the Sample4Geo baseline with improved training strategies and robustness-oriented evaluation protocols",
-        "Identified and quantified failure modes of visual geolocalization models under extreme appearance shifts",
+        "Visual geolocalization under severe appearance changes: studied image-based geolocalization robustness under weather, illumination, and seasonal shifts; extended the Sample4Geo baseline with improved training strategies and robustness-focused evaluation protocols",
 
-        "Project 4 — Efficient Fine-Grained Cross-View Image Geolocalization:",
-        "Developed an efficient cross-view geolocalization framework aligning ground-level and satellite imagery",
-        "Designed architectures that decouple heavy visual encoding from fast geometric refinement for real-time inference",
-        "Achieved sub-meter–level geolocalization accuracy with significantly reduced inference cost compared to prior methods",
-        "This work is currently under review at a top-tier computer vision venue",
+        "Efficient fine-grained cross-view geolocalization: designed an efficient framework aligning ground-level and satellite imagery by decoupling heavy visual encoding from fast geometric refinement; achieved sub-meter accuracy with significantly reduced inference cost; work currently under review at a top-tier computer vision venue",
 
-        "Ongoing Work — Vision-Language Models for Geolocalization Reasoning:",
-        "Exploring vision-language models for semantic and spatial reasoning in geolocalization tasks",
-        "Evaluating prompting strategies and parameter-efficient fine-tuning (LoRA) for location reasoning and interpretability",
+        "Ongoing research on vision-language models for geolocalization: exploring semantic and spatial reasoning using VLMs, including prompt design and parameter-efficient fine-tuning (LoRA) for interpretable location reasoning",
 
-        "All research implemented primarily in PyTorch and PyTorch Geometric, with rigorous experimentation, ablation studies, and reproducibility practices"
+        "All research implemented primarily in PyTorch and PyTorch Geometric, with extensive experimentation, ablation studies, and reproducibility practices"
       ]
     },
 
     {
       "name": "Orange Jordan",
       "position": "Senior Data Analyst",
-      "startDate": "10/2021",
-      "endDate": "08/2023",
+      "startDate": "2021-10",
+      "endDate": "2023-08",
+      "summary": "Data-driven performance analysis and automation for large-scale telecom services.",
       "highlights": [
-        "Led data-driven performance analysis for nationwide telecom services using large-scale operational datasets",
+        "Led nationwide service performance analysis using large-scale operational telecom datasets",
         "Designed and deployed automated analytics pipelines using Python, SQL, Pandas, and NumPy to analyze service KPIs",
-        "Managed and analyzed data generated by software-based service testing robots to monitor service quality and detect degradation",
-        "Developed automated alerting systems in Python to trigger alarms when service performance deviated from predefined thresholds",
-        "Built interactive dashboards using Power BI, Tableau, and Grafana for real-time monitoring and executive reporting",
-        "Led agile automation initiatives to reduce repetitive manual reporting and improve operational efficiency",
-        "Collaborated with engineering and operations teams to support data-driven decisions and service optimization"
+        "Managed and analyzed data generated by software-based service testing robots to detect performance degradation",
+        "Developed automated Python-based alerting systems to trigger alarms when KPIs deviated from defined thresholds",
+        "Built real-time monitoring and executive dashboards using Power BI, Tableau, and Grafana",
+        "Led agile automation initiatives that reduced repetitive manual reporting and improved operational efficiency",
+        "Collaborated closely with engineering and operations teams to enable data-driven service optimization"
       ]
     },
 
     {
       "name": "Orange Jordan",
       "position": "Radio Frequency Engineer",
-      "startDate": "05/2019",
-      "endDate": "10/2021",
+      "startDate": "2019-05",
+      "endDate": "2021-10",
+      "summary": "Radio network planning, optimization, and performance analysis for cellular systems.",
       "highlights": [
-        "Worked on planning, optimization, and performance analysis of cellular radio access networks (4G/5G)",
+        "Worked on planning and optimization of large-scale 4G and 5G radio access networks",
         "Analyzed RF measurements, drive-test data, and network KPIs to identify coverage, capacity, and interference issues",
         "Supported radio network optimization using industry-standard RF planning and monitoring tools",
-        "Developed strong practical expertise in wireless propagation, noisy measurements, and real-world system constraints"
+        "Developed strong intuition for wireless propagation, noisy measurements, and real-world system constraints"
       ]
     }
   ],
 
   "skills": [
-  {
-    "name": "Core Expertise",
-    "keywords": [
-      "Visual Geolocalization",
-      "Cross-View Image Matching",
-      "Fine-Grained Image Geolocalization",
-      "Uncertainty-Aware Learning",
-      "Spatial Reasoning"
-    ]
-  },
-  {
-    "name": "Machine Learning & Computer Vision",
-    "keywords": [
-      "Deep Learning (CNNs, Transformers)",
-      "Representation Learning",
-      "Graph Neural Networks (GNNs)",
-      "Sequence Models (LSTM, BiLSTM)",
-      "Conformal Prediction"
-    ]
-  },
-  {
-    "name": "Tools & Frameworks",
-    "keywords": [
-      "PyTorch",
-      "PyTorch Geometric",
-      "NumPy",
-      "Pandas",
-      "Scikit-learn"
-    ]
-  },
-  {
-    "name": "Data, Systems & Visualization",
-    "keywords": [
-      "SQL",
-      "Python Automation",
-      "Power BI",
-      "Tableau",
-      "Grafana"
-    ]
-  }
-]
-  "education": [
     {
-      "institution": "University of Jordan",
-      "location": "Amman, Jordan",
-      "url": "https://www.ju.edu.jo/",
-      "area": "Electrical Engineering",
-      "studyType": "BSc"
+      "name": "Core Research Expertise",
+      "keywords": [
+        "Visual Geolocalization",
+        "Cross-View Image Matching",
+        "Fine-Grained Image Geolocalization",
+        "Uncertainty-Aware Learning",
+        "Spatial Reasoning"
+      ]
     },
+    {
+      "name": "Machine Learning & Computer Vision",
+      "keywords": [
+        "Deep Learning (CNNs, Transformers)",
+        "Representation Learning",
+        "Graph Neural Networks (GNNs)",
+        "Sequence Models (LSTM, BiLSTM)",
+        "Conformal Prediction"
+      ]
+    },
+    {
+      "name": "Tools & Frameworks",
+      "keywords": [
+        "PyTorch",
+        "PyTorch Geometric",
+        "NumPy",
+        "Pandas",
+        "Scikit-learn"
+      ]
+    },
+    {
+      "name": "Data & Visualization",
+      "keywords": [
+        "SQL",
+        "Python Automation",
+        "Power BI",
+        "Tableau",
+        "Grafana"
+      ]
+    }
+  ],
+
+  "education": [
     {
       "institution": "University of Vermont",
       "location": "Burlington, Vermont",
       "url": "https://www.uvm.edu/",
       "area": "Computer Science",
       "studyType": "PhD"
+    },
+    {
+      "institution": "University of Jordan",
+      "location": "Amman, Jordan",
+      "url": "https://www.ju.edu.jo/",
+      "area": "Electrical Engineering",
+      "studyType": "BSc"
     }
   ],
 
@@ -148,64 +133,53 @@
     {
       "name": "Cisco Certified Network Associate (CCNA)",
       "issuer": "Cisco",
-      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
-      "icon": "fa-solid fa-network-wired"
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html"
     },
     {
       "name": "Google Data Analytics Professional Certificate",
       "issuer": "Google (Coursera)",
-      "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
-      "icon": "fa-solid fa-chart-line"
+      "url": "https://www.coursera.org/professional-certificates/google-data-analytics"
     },
     {
-      "name": "Advanced PL/SQL",
-      "icon": "fa-solid fa-database"
+      "name": "Advanced PL/SQL"
     },
     {
       "name": "Machine Learning Specialization",
       "issuer": "Stanford University / Coursera",
-      "url": "https://www.coursera.org/specializations/machine-learning-introduction",
-      "icon": "fa-solid fa-robot"
+      "url": "https://www.coursera.org/specializations/machine-learning-introduction"
     },
     {
       "name": "Introduction to IoT",
       "issuer": "Cisco Networking Academy",
-      "url": "https://www.netacad.com/courses/iot/introduction-iot",
-      "icon": "fa-solid fa-network-wired"
+      "url": "https://www.netacad.com/courses/iot/introduction-iot"
     },
     {
       "name": "Introduction to Natural Language Processing",
-      "issuer": "Analytics Vidhya",
-      "url": "https://courses.analyticsvidhya.com/",
-      "icon": "fa-solid fa-language"
+      "issuer": "Analytics Vidhya"
     },
     {
       "name": "Power BI for Business Workshop",
-      "issuer": "OZ Training & Consulting",
-      "icon": "fa-solid fa-chart-pie"
+      "issuer": "OZ Training & Consulting"
     }
   ],
 
   "languages": [
     {
       "language": "Arabic",
-      "fluency": "Native speaker",
-      "icon": ""
+      "fluency": "Native"
     },
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Fluent"
     }
   ],
 
   "interests": [
     {
       "name": "Computer Vision & Geolocalization",
-      "icon": "fa-solid fa-robot",
       "keywords": [
         "Visual Geolocalization",
-        "Cross-View Matching",
+        "Cross-View Reasoning",
         "Uncertainty Modeling",
         "Vision-Language Models"
       ]
@@ -215,12 +189,10 @@
   "references": [
     {
       "name": "Professor Safwan Wshah",
-      "icon": "fa-solid fa-laptop",
       "reference": "Advisor — safwan.wshah@uvm.edu"
     },
     {
       "name": "Professor Anastassia Gharib",
-      "icon": "fa-solid fa-laptop",
       "reference": "agharib@aus.edu"
     }
   ]
