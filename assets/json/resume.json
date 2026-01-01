@@ -118,7 +118,7 @@
   ],
 
   "education": [
-  {
+    {
     "institution": "University of Vermont",
     "location": "Burlington, Vermont, USA",
     "url": "https://www.uvm.edu/",
@@ -129,8 +129,8 @@
     "highlights": [
       "Research focus: visual geolocalization, cross-view image understanding, uncertainty modeling",
       "Graduate coursework: Advanced Machine Learning, Deep Learning, Natural Language Processing, Large Language Models, Data Mining, Data Science, Advanced Algorithm Design"
-    ]
-  },
+      ]
+    },
     {
     "institution": "University of Jordan",
     "location": "Amman, Jordan",
@@ -148,8 +148,8 @@
       "Developed novel channel allocation and coordination algorithms implemented in C++",
       "Used MATLAB for system-level simulation, performance evaluation, and visualization of network behavior"
     ]
-  }
-]
+    }
+  ],
 
   "certificates": [
     {
