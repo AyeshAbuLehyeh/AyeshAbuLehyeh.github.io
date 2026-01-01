@@ -95,12 +95,12 @@
       "keywords": [
         "Python",
         "C++",
-        "MATLAB"
+        "MATLAB",
         "PyTorch",
         "PyTorch Geometric",
         "NumPy",
         "Pandas",
-        "Scikit-learn"
+        "Scikit-learn",
         "Linux"
       ]
     },
@@ -128,7 +128,7 @@
     "summary": "PhD researcher specializing in computer vision and geolocalization, with a focus on uncertainty-aware learning and cross-view visual reasoning.",
     "highlights": [
       "Research focus: visual geolocalization, cross-view image understanding, uncertainty modeling",
-      "Graduate coursework: Advanced Machine Learning, Deep Learning, Natural Language Processing, Data Mining, Data Science, Advanced Algorithm Design"
+      "Graduate coursework: Advanced Machine Learning, Deep Learning, Natural Language Processing, Large Language Models, Data Mining, Data Science, Advanced Algorithm Design"
     ]
   },
     {
