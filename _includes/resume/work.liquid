@@ -16,7 +16,9 @@
             <tbody>
               <tr>
                 <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ date }} </span>
+                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                    {{ date }}
+                  </span>
                 </td>
               </tr>
               {% if content.location %}
@@ -32,16 +34,23 @@
             </tbody>
           </table>
         </div>
+
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
           <h6 class="title font-weight-bold ml-1 ml-md-4">
             <a href="{{ content.url }}">{{ content.position }}</a>
           </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.name }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+            {{ content.name }}
+          </h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+            {{ content.summary }}
+          </h6>
+
           <ul class="items">
             {% for item in content.highlights %}
               <li>
-                <span class="item">{{ item }}</span>
+                <!-- ✅ THIS IS THE ONLY IMPORTANT CHANGE -->
+                <span class="item">{{ item | markdownify }}</span>
               </li>
             {% endfor %}
           </ul>
