@@ -64,7 +64,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-our-paper-got-accepted-in-iscram-2024",
+            },},{id: "news-our-work-got-accepted-in-ieee-icc-2026-the-full-paper-is-coming-soon",
+          title: 'Our work got accepted in IEEE ICC 2026! The full paper is coming...',
+          description: "",
+          section: "News",},{id: "news-our-paper-got-accepted-in-iscram-2024",
           title: 'Our paper got accepted in ISCRAM 2024!',
           description: "",
           section: "News",},{id: "news-our-paper-ubigtloc-now-is-published-in-the-ieee-internet-of-things-journal",
