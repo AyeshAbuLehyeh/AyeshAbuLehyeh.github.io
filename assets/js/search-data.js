@@ -83,7 +83,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project/";
             },},{id: "projects-spatially-adaptive-conformal-graph-transformer-for-indoor-localization-in-wi-fi-driven-networks",
           title: 'Spatially-Adaptive Conformal Graph Transformer for Indoor Localization in Wi-Fi Driven Networks',
-          description: "A GNN-based regression framework for indoor localization with rigorous uncertainty guarantees.",
+          description: "A GNN-based regression framework for indoor localization with rigorous uncertainty guarantees. Accepted to IEEE ICC 2026.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-ml-driven-rf-test-compaction",
