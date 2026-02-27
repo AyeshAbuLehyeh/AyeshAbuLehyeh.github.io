@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Efficient Cross-View Geolocalization
+title: GeoFlow: Real-Time Fine-Grained Cross-View Geolocalization via Iterative Flow Prediction
 description: A lightweight, real-time framework for fine-grained cross-view geolocalization.
 img: /assets/img/cvg_architecture.jpg
 importance: 1
@@ -9,8 +9,8 @@ related_publications: true
 ---
 
 <div class="alert alert-info" role="alert">
-  <strong>Status:</strong> This work has been submitted to a top-tier conference and is currently under review.  
-  Code and full technical details will be released upon acceptance.
+  <strong>Status:</strong> This work has been accepted to CVPR 2026 (main conference track).  
+  Code, Paper and full technical details will be released soon.
 </div>
 
 This project introduces a **lightweight and real-time framework for fine-grained cross-view geolocalization**, designed to overcome the accuracy–efficiency trade-off that limits practical deployment.
