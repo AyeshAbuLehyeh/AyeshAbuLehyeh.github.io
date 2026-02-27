@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Spatially-Adaptive Conformal Graph Transformer for Indoor Localization in Wi-Fi Driven Networks
-description: A GNN-based regression framework for indoor localization with rigorous uncertainty guarantees.
+description: A GNN-based regression framework for indoor localization with rigorous uncertainty guarantees. Accepted to IEEE ICC 2026.
 img: /assets/img/indoor_cp_architecture.jpg
 importance: 2
 category: work
