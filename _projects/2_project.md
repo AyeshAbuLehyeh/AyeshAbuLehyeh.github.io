@@ -9,10 +9,10 @@ related_publications: true
 ---
 
 <div class="alert alert-info" role="alert">
-  <strong>Status:</strong> This work has been accepted to IEEE ICC 2026 (main conference). [Click for the full paper](https://arxiv.org/abs/2601.22322).
+  <strong>Status:</strong> This work has been accepted to IEEE ICC 2026 (main conference). 
 </div>
 
-This project introduces a **reliable indoor localization framework** that performs **continuous position regression** while providing **formal, user-defined uncertainty guarantees**, enabling safer deployment in real-world systems.
+This project introduces a **reliable indoor localization framework** that performs **continuous position regression** while providing **formal, user-defined uncertainty guarantees**, enabling safer deployment in real-world systems. [Click for the full paper](https://arxiv.org/abs/2601.22322).
 
 ---
 
