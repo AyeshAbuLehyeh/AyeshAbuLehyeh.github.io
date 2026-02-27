@@ -78,7 +78,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-geoflow-real-time-fine-grained-cross-view-geolocalization-via-iterative-flow-prediction",
           title: 'GeoFlow: Real-Time Fine-Grained Cross-View Geolocalization via Iterative Flow Prediction',
-          description: "A lightweight, real-time framework for fine-grained cross-view geolocalization.",
+          description: "A lightweight, real-time framework for fine-grained cross-view geolocalization. Accepted to CVPR 2026.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-spatially-adaptive-conformal-graph-transformer-for-indoor-localization-in-wi-fi-driven-networks",
