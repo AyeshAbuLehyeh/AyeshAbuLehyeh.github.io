@@ -76,9 +76,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-geoflow-project-got-accepted-in-cvpr-2026-see-you-in-denver-paper-is-coming-soon",
           title: 'Our GeoFlow project got accepted in CVPR 2026! See you in Denver! Paper...',
           description: "",
-          section: "News",},{id: "projects-efficient-cross-view-geolocalization",
-          title: 'Efficient Cross-View Geolocalization',
-          description: "A lightweight, real-time framework for fine-grained cross-view geolocalization.",
+          section: "News",},{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-reliable-indoor-localization-with-adaptive-confidence",
