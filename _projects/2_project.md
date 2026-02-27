@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reliable Indoor Localization with Adaptive Confidence
+title: Spatially-Adaptive Conformal Graph Transformer for Indoor Localization in Wi-Fi Driven Networks
 description: A GNN-based regression framework for indoor localization with rigorous uncertainty guarantees.
 img: /assets/img/indoor_cp_architecture.jpg
 importance: 2
@@ -9,8 +9,7 @@ related_publications: true
 ---
 
 <div class="alert alert-info" role="alert">
-  <strong>Status:</strong> This work has been submitted to a top-tier conference and is currently under review.  
-  Code and full technical details will be released upon acceptance.
+  <strong>Status:</strong> This work has been accepted to IEEE ICC 2026 (main conference). [Click for the full paper](https://arxiv.org/abs/2601.22322).
 </div>
 
 This project introduces a **reliable indoor localization framework** that performs **continuous position regression** while providing **formal, user-defined uncertainty guarantees**, enabling safer deployment in real-world systems.
