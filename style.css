@@ -1,0 +1,298 @@
+/* Ayesh Abu Lehyeh, personal site. One file, no build step. */
+
+:root {
+  --accent: #14376e;
+  --text: #2b2b2b;
+  --muted: #666;
+  --rule: #e6e8ec;
+  --tile: #f3f5f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 56px 24px 48px;
+  max-width: 848px;
+  background: #fff;
+  color: var(--text);
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+/* Header */
+
+.intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 44px;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 0;
+}
+
+h1 {
+  margin: 0;
+  color: #111;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.role {
+  margin: 6px 0 18px;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.photo {
+  flex-shrink: 0;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--tile);
+}
+
+.links {
+  margin: 18px 0 0;
+}
+
+.links a {
+  white-space: nowrap;
+}
+
+.links .sep {
+  margin: 0 4px 0 8px;
+  color: #b5b9c0;
+}
+
+/* Sections */
+
+section {
+  margin-top: 44px;
+}
+
+h2 {
+  margin: 0 0 18px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+ul.plain {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.plain li {
+  margin-bottom: 8px;
+}
+
+/* News */
+
+.news {
+  display: grid;
+  grid-template-columns: 86px 1fr;
+  gap: 8px 14px;
+  margin: 0;
+}
+
+.news dt {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.news dd {
+  margin: 0;
+}
+
+/* Publications */
+
+.pub {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 22px;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.pub-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  min-height: 96px;
+  margin-top: 4px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.pub-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pub-img.placeholder {
+  background: var(--tile);
+  color: #8a909a;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.pub-title {
+  margin: 0;
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.pub-authors,
+.pub-venue,
+.pub-links,
+.pub-desc {
+  margin: 3px 0 0;
+}
+
+.pub-venue {
+  color: #444;
+  font-style: italic;
+}
+
+.pub-links a,
+.pub-links button {
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.pub-links button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+}
+
+.pub-links button:hover,
+.pub-links button:focus-visible {
+  text-decoration: underline;
+}
+
+.pub-desc {
+  margin-top: 6px;
+  color: #444;
+}
+
+.bibtex {
+  margin: 10px 0 0;
+  padding: 12px 14px;
+  border-radius: 6px;
+  background: var(--tile);
+  color: #333;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.5px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.code-line {
+  margin: 0;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 56px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  color: #888;
+  font-size: 13.5px;
+}
+
+footer a {
+  color: #888;
+  text-decoration: underline;
+}
+
+/* Small screens */
+
+@media (max-width: 640px) {
+  body {
+    padding: 32px 18px 40px;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+    gap: 22px;
+  }
+
+  .photo {
+    width: 132px;
+    height: 132px;
+  }
+
+  h1 {
+    font-size: 29px;
+  }
+
+  .news {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .news dd {
+    margin-bottom: 12px;
+  }
+
+  .pub {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .pub-img {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
+/* Redirect and 404 pages */
+
+.notice {
+  margin-top: 80px;
+  text-align: center;
+}
